@@ -1,0 +1,37 @@
+# ============================================================
+# .gitignore - ERPNext Docker Project
+# ============================================================
+
+# Sensitive env files
+.env.local
+.env.production
+*.env.local
+
+# Docker volumes (never commit data)
+mariadb-data/
+sites/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Backups
+*.sql.gz
+*.tar.gz
+*.zip
+
+# IDE
+.vscode/
+.idea/
